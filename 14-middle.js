@@ -1,3 +1,3 @@
 let name = ["john", "musk", "doe"];
-let middle = Math.floor(name.length / 2);
+let middle = (name.length - 1) / 2;
 console.log(name[middle]);
