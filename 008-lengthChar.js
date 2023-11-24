@@ -1,6 +1,6 @@
-let str = "je suis un codeur";
+let str = process.argv[2];
 let count = 0;
-for (let key in str) {
+for (let i = 0; i < str.length; i++) {
   count++;
 }
 console.log(count);

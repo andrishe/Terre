@@ -1,7 +1,3 @@
-let number = 7;
+let number = Number(process.argv[2]);
 
-if (number % 2 == 0) {
-  console.log("le nombre est pair");
-} else {
-  console.log("le nombre est impair");
-}
+number % 2 == 0 || number % 2 < 0 ? console.log("pair") : console.log("impair");
