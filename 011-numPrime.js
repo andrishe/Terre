@@ -1,13 +1,15 @@
+let num = Number(process.argv[2]);
+
 function numPrime(num) {
   if (num <= 1) {
-    return false;
+    return `${num} is not a prime number`;
   }
-  for (let i = 2; i < num; i++) {
+  for (let i = 2; i * i <= num; i++) {
     if (num % i === 0) {
-      return false;
+      return `${num} is not a prime number`;
     }
   }
-  return true;
+  return `${num} is a prime number`;
 }
-console.log(numPrime(22));
-console.log(numPrime(11));
+
+console.log(numPrime(num));

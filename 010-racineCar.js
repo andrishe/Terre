@@ -1,9 +1,14 @@
 // let racine = 6;
 // console.log(Math.pow(racine, 1 / 2));
 
+let num = Number(process.argv[2]);
 const racineCarre = (num) => {
   let number = num / 2;
   let number2;
+
+  if (num === 0) {
+    console.log("the square root of 0 does not exist");
+  }
 
   do {
     number2 = number;
@@ -12,4 +17,4 @@ const racineCarre = (num) => {
   return number;
 };
 
-console.log(racineCarre(9));
+console.log(racineCarre(num));
